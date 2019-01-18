@@ -1,0 +1,11 @@
+﻿C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (model0.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+c:\users\random\desktop\aadsp2-projekat\model1\processwavfile\main.cpp(195): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\random\desktop\aadsp2-projekat\model1\processwavfile\main.cpp(136): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\random\desktop\aadsp2-projekat\model1\processwavfile\main.cpp(138): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  iir2.cpp
+  Generating Code...
+  ProcessWavFile.vcxproj -> C:\Users\random\Desktop\AADSP2-Projekat\model1\Debug\model1.exe
+  ProcessWavFile.vcxproj -> C:\Users\random\Desktop\AADSP2-Projekat\model1\Debug\model1.pdb (Full PDB)
