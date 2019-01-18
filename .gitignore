@@ -53,3 +53,14 @@ dkms.conf
 
 # Idea files
 .idea/
+
+# Input files
+TestStreams/
+
+# Tools
+tools/
+
+# Generated files
+OutCmp/
+OutStreams/
+
