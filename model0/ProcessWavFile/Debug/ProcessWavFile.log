@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\users\random\desktop\aadsp2-projekat\model0\processwavfile\main.cpp(181): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\random\desktop\aadsp2-projekat\model0\processwavfile\main.cpp(122): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\random\desktop\aadsp2-projekat\model0\processwavfile\main.cpp(124): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  ProcessWavFile.vcxproj -> C:\Users\random\Desktop\AADSP2-Projekat\model0\Debug\model0.exe
+  ProcessWavFile.vcxproj -> C:\Users\random\Desktop\AADSP2-Projekat\model0\Debug\model0.pdb (Full PDB)
