@@ -412,3 +412,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# CLIDE
+output/
+snapshots/
