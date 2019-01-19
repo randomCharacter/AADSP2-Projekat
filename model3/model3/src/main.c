@@ -46,12 +46,12 @@ mode output_mode = MODE2_0_0;
 /////////////////////////////////////////////////////////////////////////////////
 // Filter coefficients
 /////////////////////////////////////////////////////////////////////////////////
-__memX DSPfract l_coefs[] = { FRACT_NUM(0.6828), FRACT_NUM(0.68285), FRACT_NUM(0.6828), FRACT_NUM(1.0), FRACT_NUM(0.5657), FRACT_NUM(0.6) };
-__memX DSPfract c_coefs[] = { FRACT_NUM(0.9617), FRACT_NUM(-0.9617), FRACT_NUM(0.9617), FRACT_NUM(1.0), FRACT_NUM(-0.9591), FRACT_NUM(0.9287) };
-__memX DSPfract ls_coefs[] = { FRACT_NUM(0.4139), FRACT_NUM(0.0), FRACT_NUM(-0.4139), FRACT_NUM(1.0), FRACT_NUM(-0.3192), FRACT_NUM(0.1722) };
-__memX DSPfract rs_coefs[] = { FRACT_NUM(0.4139), FRACT_NUM(0.0), FRACT_NUM(-0.4139), FRACT_NUM(1.0), FRACT_NUM(-0.3192), FRACT_NUM(0.1722) };
-__memX DSPfract r_coefs[] = { FRACT_NUM(0.9617), FRACT_NUM(-0.9617), FRACT_NUM(0.9617), FRACT_NUM(1.0), FRACT_NUM(-0.9591), FRACT_NUM(0.9287) };
-__memX DSPfract lfe_coefs[] = { FRACT_NUM(0.6828), FRACT_NUM(0.68285), FRACT_NUM(0.6828), FRACT_NUM(1.0), FRACT_NUM(0.5657), FRACT_NUM(0.6) };
+__memX DSPfract __attribute__((__aligned__(8))) l_coefs[8] = { FRACT_NUM(0.6828), FRACT_NUM(0.68285), FRACT_NUM(0.6828), FRACT_NUM(1.0), FRACT_NUM(0.5657), FRACT_NUM(0.6) };
+__memX DSPfract __attribute__((__aligned__(8))) c_coefs[8] = { FRACT_NUM(0.9617), FRACT_NUM(-0.9617), FRACT_NUM(0.9617), FRACT_NUM(1.0), FRACT_NUM(-0.9591), FRACT_NUM(0.9287) };
+__memX DSPfract __attribute__((__aligned__(8))) ls_coefs[8] = { FRACT_NUM(0.4139), FRACT_NUM(0.0), FRACT_NUM(-0.4139), FRACT_NUM(1.0), FRACT_NUM(-0.3192), FRACT_NUM(0.1722) };
+__memX DSPfract __attribute__((__aligned__(8))) rs_coefs[8] = { FRACT_NUM(0.4139), FRACT_NUM(0.0), FRACT_NUM(-0.4139), FRACT_NUM(1.0), FRACT_NUM(-0.3192), FRACT_NUM(0.1722) };
+__memX DSPfract __attribute__((__aligned__(8))) r_coefs[8] = { FRACT_NUM(0.9617), FRACT_NUM(-0.9617), FRACT_NUM(0.9617), FRACT_NUM(1.0), FRACT_NUM(-0.9591), FRACT_NUM(0.9287) };
+__memX DSPfract __attribute__((__aligned__(8))) lfe_coefs[8] = { FRACT_NUM(0.6828), FRACT_NUM(0.68285), FRACT_NUM(0.6828), FRACT_NUM(1.0), FRACT_NUM(0.5657), FRACT_NUM(0.6) };
 /////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////
