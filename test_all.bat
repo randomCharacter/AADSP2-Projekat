@@ -41,7 +41,7 @@ for %%f in (TestStreams\*.*) do (
 		@echo     ^<FILE_IO_CFG block_type="Input" channels_per_line="2" delay="0" file_mode="PCM" index="0" justification="Left" sample_format="LittleEndian" sample_rate="48000" sample_size="32"/^>
 		@echo     ^<FILE_IO_CFG block_type="Output" channels_per_line="2" delay="0" file_mode="PCM" index="0" justification="Left" sample_format="LittleEndian" sample_rate="48000" sample_size="32"/^>
 		@echo     ^<MEMORY_CFG^>
-		@echo         ^<ULD_FILE disk_path="model3/output/standalone/model3.uld"/^>
+		@echo         ^<ULD_FILE disk_path="model3/model3/output/standalone/model3.uld"/^>
 		@echo     ^</MEMORY_CFG^>
 		@echo     ^<PROFILE_CFG enable="on"/^>
 		@echo     ^<SCP_CFG load_delay="0"/^>

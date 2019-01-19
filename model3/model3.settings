@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+<clideViews>
+<clideView viewId="clide.debug.ui.memoryView">
+<memoryTab columnCount="8" core="DSP_A" memoryZone="Y" tabAddress="0"/>
+</clideView>
+<clideView viewId="clide.debug.ui.registersView">
+<registerView regViewCoreName="DSP_A">
+<regViewMementoCore scrollPercent="NaN">
+<layoutType horizontal="0" register_details="1"/>
+<expandedPath item_0="DSP_A"/>
+</regViewMementoCore>
+</registerView>
+</clideView>
+</clideViews>
+<perspective id="CLIDE.perspective"/>
+<workbench_editors>
+<editor file_path="/model3_mod/src/model3_mod_main.c"/>
+<editor file_path="/model3_mod/inc/processing.h"/>
+<editor file_path="/model3_mod/inc/common.h"/>
+<editor file_path="/model3/inc/common.h"/>
+<editor file_path="/model3_mod/inc/iir2.h"/>
+<editor file_path="/model3_mod/src/processing.c"/>
+<editor file_path="/model3_mod/src/model3_mod_os_interface.c"/>
+<editor file_path="/model3_overlay/output/application/application.build.log"/>
+</workbench_editors>
+<views/>
+<watchExpressions/>
+<launcherConfiguration/>
+<projectSettings/>
+</settings>

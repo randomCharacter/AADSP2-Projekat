@@ -1,0 +1,5 @@
+clide.project.core=DSP_A
+clide.project.createZip=true
+clide.project.target=crystal32
+clide.project.type=module
+eclipse.preferences.version=1

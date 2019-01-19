@@ -1,0 +1,1 @@
+void processing(DSPFract **inputBuffer, DSPFract **outputBuffer);
