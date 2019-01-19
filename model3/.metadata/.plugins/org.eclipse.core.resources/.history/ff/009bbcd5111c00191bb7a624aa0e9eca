@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<application boardClass="SIMULATOR" chipTarget="" chipFamily="crystal32">
-    <SDKVersion>7_1_7</SDKVersion>
-    <CLIDEVersion>7_1_8</CLIDEVersion>
-    <concurrencies/>
-</application>

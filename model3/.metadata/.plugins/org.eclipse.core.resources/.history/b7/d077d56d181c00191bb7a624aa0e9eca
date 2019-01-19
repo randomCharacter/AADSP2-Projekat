@@ -1,7 +1,0 @@
-#ifndef __PROCESSING_H__
-#define __PROCESSING_H__
-#include <common.h>
-
-void processing(DSPFract **inputBuffer, DSPFract **outputBuffer);
-
-#endif
