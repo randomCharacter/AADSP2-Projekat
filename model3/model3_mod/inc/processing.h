@@ -3,6 +3,6 @@
 
 #include <common.h>
 
-void processing(fract **inputBuffer, fract **outputBuffer);
+void processing(const pcm_sample_ptr_t __memY *inputBuffer, const pcm_sample_ptr_t __memY *outputBuffer);
 
 #endif

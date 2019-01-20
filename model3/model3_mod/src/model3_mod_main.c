@@ -15,6 +15,7 @@ __memY mcv_t model3_mod_mcv_HOST = MCV_INITIAL_VALUES;
 __memY mcv_t model3_mod_mcv;
 
 extern __memY const pcm_sample_ptr_t __X_BY_IOBUFFER_PTRS[16];
+extern fract gain1;
 
 void __fg_call model3_mod_preKickstart(__memY void * mif_ptr)
 {
@@ -38,7 +39,9 @@ void __fg_call model3_mod_frame(void)
 
 void __fg_call model3_mod_brick(void)
 {
-	//processing((fract**)__X_BY_IOBUFFER_PTRS, (fract**)__X_BY_IOBUFFER_PTRS);
+	if (model3_mod_mcv.enable) {
+		processing(__X_BY_IOBUFFER_PTRS, __X_BY_IOBUFFER_PTRS);
+	}
 }
 
 void __bg_call model3_mod_background(void)

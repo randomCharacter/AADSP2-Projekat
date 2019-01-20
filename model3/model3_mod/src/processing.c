@@ -49,27 +49,27 @@ __memY fract r_y_history[2] = { (0.0), (0.0) };
 __memY fract lfe_x_history[2] = { (0.0), (0.0) };
 __memY fract lfe_y_history[2] = { (0.0), (0.0) };
 
-void processing(fract **inputBuffer, fract **outputBuffer) {
+void processing(const pcm_sample_ptr_t __memY *inputBuffer, pcm_sample_ptr_t __memY *outputBuffer) {
         int i;
-        fract __memY* inputBuffer_l = inputBuffer[CH_L];
-        fract __memY* sampleBuffer_l = outputBuffer[CH_L];
-        fract __memY* sampleBuffer_r = outputBuffer[CH_R];
-        fract __memY* sampleBuffer_c = outputBuffer[CH_C];
-        fract __memY* sampleBuffer_ls = outputBuffer[CH_LS];
-        fract __memY* sampleBuffer_rs = outputBuffer[CH_RS];
-        fract __memY* sampleBuffer_lfe = outputBuffer[CH_LFE];
+        pcm_sample_ptr_t inputBuffer_l = inputBuffer[CH_L];
+        pcm_sample_ptr_t sampleBuffer_l = outputBuffer[CH_L];
+        pcm_sample_ptr_t sampleBuffer_r = outputBuffer[CH_R];
+        pcm_sample_ptr_t sampleBuffer_c = outputBuffer[CH_C];
+        pcm_sample_ptr_t sampleBuffer_ls = outputBuffer[CH_LS];
+        pcm_sample_ptr_t sampleBuffer_rs = outputBuffer[CH_RS];
+        pcm_sample_ptr_t sampleBuffer_lfe = outputBuffer[CH_LFE];
 
         for (i = 0; i < __X_VY_BLOCK_SIZE; i++) {
                 if (output_mode != MODE2_0_0) {
-                        *sampleBuffer_c = second_order_IIR(gain1 * *inputBuffer_l, c_coefs, c_x_history, c_y_history);
-                        *sampleBuffer_ls = second_order_IIR(gain1 * *inputBuffer_l, ls_coefs, ls_x_history, ls_y_history);
-                        *sampleBuffer_rs = second_order_IIR(gain2 * *inputBuffer_l, rs_coefs, rs_x_history, rs_y_history);
+                        *sampleBuffer_c = second_order_IIR(model3_mod_mcv.gain1 * *inputBuffer_l, c_coefs, c_x_history, c_y_history);
+                        *sampleBuffer_ls = second_order_IIR(model3_mod_mcv.gain1 * *inputBuffer_l, ls_coefs, ls_x_history, ls_y_history);
+                        *sampleBuffer_rs = second_order_IIR(model3_mod_mcv.gain2 * *inputBuffer_l, rs_coefs, rs_x_history, rs_y_history);
                 }
                 if (output_mode == MODE3_2_1) {
-                        *sampleBuffer_lfe = second_order_IIR(gain2 * *inputBuffer_l, lfe_coefs, lfe_x_history, lfe_y_history);
+                        *sampleBuffer_lfe = second_order_IIR(model3_mod_mcv.gain2 * *inputBuffer_l, lfe_coefs, lfe_x_history, lfe_y_history);
                 }
-                *sampleBuffer_r = second_order_IIR(gain2 * *inputBuffer_l, r_coefs, r_x_history, r_y_history);
-                *sampleBuffer_l = second_order_IIR(gain1 * *inputBuffer_l, l_coefs, l_x_history, l_y_history);
+                *sampleBuffer_r = second_order_IIR(model3_mod_mcv.gain2 * *inputBuffer_l, r_coefs, r_x_history, r_y_history);
+                *sampleBuffer_l = second_order_IIR(model3_mod_mcv.gain1 * *inputBuffer_l, l_coefs, l_x_history, l_y_history);
 
                 sampleBuffer_l++;
                 sampleBuffer_r++;
