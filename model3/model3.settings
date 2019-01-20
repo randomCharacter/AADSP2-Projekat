@@ -5,9 +5,7 @@
 <memoryTab columnCount="8" core="DSP_A" memoryZone="Y" tabAddress="0"/>
 </clideView>
 <clideView viewId="clide.debug.ui.registersView">
-<registerView regViewCoreName="DSP_A">
-<regViewMementoCore scrollPercent="NaN">
-<layoutType horizontal="0" register_details="1"/>
+<registerView regViewCoreName="DSP_A">&#x0A;<regViewMementoCore scrollPercent="NaN">&#x0A;<layoutType horizontal="0" register_details="1"/>
 <expandedPath item_0="DSP_A"/>
 </regViewMementoCore>
 </registerView>
